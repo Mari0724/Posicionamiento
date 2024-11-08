@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px; 
+}
+
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #5e2028;
+    padding: 10px 15px;
+    box-shadow: 0px 4px 8px rgba(255, 254, 254, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.app-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #dcd5d5;
+}
+
+.navbar-profile-pic {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.post {
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.user-info h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.user-info p {
+    font-size: 14px;
+    color: #777;
+}
+
+.post-content {
+    padding: 15px;
+}
+
+.post-content p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Interacciones del post */
+.post-interactions {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+.post-interactions button,
+.post-interactions label {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #555;
+    padding: 5px;
+    transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.post-interactions button:hover,
+.post-interactions label:hover {
+    transform: scale(1.1); /* Agranda el botón */
+}
+
+/* Like button - usando label e input */
+.like-input {
+    display: none; /* Oculta el checkbox */
+}
+
+/* Estilo del label que actúa como botón de Like */
+.like-label {
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+/* Cambia el color cuando el input está "checkeado" */
+.like-input:checked + .like-label {
+    color: red; 
+    transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+    .post { 
+        width: 95%;
+    }
+    
+    .user-info h3 {
+        font-size: 16px;
+    }
+    
+    .user-info p {
+        font-size: 12px;
+    }
+    
+    .post-content p {
+        font-size: 14px;
+    }
+    
+    .post-interactions button {
+        font-size: 14px;
+    }
+}
+
+
+
+

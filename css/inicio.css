@@ -1,0 +1,42 @@
+body {
+    background: linear-gradient(45deg, rgba(57, 52, 204, 0.906) 0%, rgba(123, 67, 137, 1) 50%, rgba(255, 140, 246, 1) 100%);
+    background-size: cover;
+    background-attachment: fixed; 
+    background-repeat: no-repeat; 
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 250px; 
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px; 
+}
+
+.box {
+    background-color: rgba(219, 182, 255, 0.425);
+    padding: 20px;
+    margin: 10px;
+    border: rgb(221, 202, 255) 7px solid;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease; 
+}
+
+.box a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+
+.box:hover {
+    background-color: rgba(170, 130, 255, 0.7); 
+    transform: scale(1.1); 
+}
